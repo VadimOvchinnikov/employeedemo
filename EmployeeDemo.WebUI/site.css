@@ -1,0 +1,39 @@
+﻿body {
+    font-family: Segoe UI, Arial, Helvetica, sans-serif;
+}
+
+.container  {
+    margin: 20px;
+}
+
+.button,
+.button:hover,
+.button:active,
+.button:focus,
+.button:visited {
+    color: #000;
+    text-decoration: none;
+}
+
+.button {
+    border: 2px solid #ddd;
+    padding: 3px 6px;
+    border-radius: 3px;
+    background-color: #fff;
+    font: inherit;
+    vertical-align: middle;
+}
+
+.table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+    .table > thead > tr > th,
+    .table > tr > th,
+    .table > tbody > tr > td,
+    .table > tr > td {
+        text-align: left;
+        border: 1px solid #ddd;
+        padding: 7px;
+    }

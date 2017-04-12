@@ -1,0 +1,31 @@
+﻿<h1>New employee</h1>
+
+<form ng-submit="create()">
+    <table>
+        <tbody>
+            <tr>
+                <td><label for="first-name">First Name:</label></td>
+                <td><input id="first-name" type="text" ng-model="employee.firstName" /></td>
+            </tr>
+            <tr>
+                <td><label for="last-name">Last Name:</label></td>
+                <td><input id="last-name" type="text" ng-model="employee.lastName" /></td>
+            </tr>
+            <tr>
+                <td><label for="employment-date">Employment Date:</label></td>
+                <td><input id="employment-date" type="date" ng-model="employee.employmentDate" /></td>
+            </tr>
+            <tr>
+                <td><label for="rate">Rate:</label></td>
+                <td><input id="rate" type="number" ng-model="employee.rate" /></td>
+            </tr>
+            <tr>
+                <td><label for="job-title">Job title:</label></td>
+                <td><input id="job-title" type="text" ng-model="employee.jobTitle" /></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a class="button" href="/">Back</a>
+    <button class="button" type="submit">Save</button>
+</form>

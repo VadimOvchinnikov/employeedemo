@@ -1,0 +1,22 @@
+﻿<a class="button" href="/new">Add new employee</a>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Job title</th>
+            <th>Employee Date</th>
+            <th>Rate</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="employee in employees">
+            <td>{{employee.Name}}</td>
+            <td>{{employee.JobTitle}}</td>
+            <td>{{employee.EmploymentDate | date:"dd/MM/yyyy"}}</td>
+            <td>{{employee.Rate | currency}}</td>
+            <td><a href="javascript:void(0);" ng-click="delete(employee.Id)">Delete</a></td>
+        </tr>
+    </tbody>
+</table>
